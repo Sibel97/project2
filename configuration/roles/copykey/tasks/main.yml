@@ -1,0 +1,7 @@
+---
+# tasks file for copykey
+
+- name: "write pub key to file"
+  copy: 
+    src: /home/jenkins/.ssh/id_rsa.pub
+    dest: /home/Sibel/key.pub

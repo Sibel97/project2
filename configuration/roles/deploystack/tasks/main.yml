@@ -1,0 +1,14 @@
+# tasks file for deploystack
+
+- name:
+  pip:
+    name:
+    - jsondiff
+    - pyyaml
+
+- name: "deploy stack from compose file"
+  docker-stack:
+    state: present
+    name: mystack
+    compose:
+    - home/Sibel/Task2/ansible/trio

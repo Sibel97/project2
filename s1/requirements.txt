@@ -1,2 +1,8 @@
-flask 
-flask_testing
+Flask
+Flask-SQLAlchemy
+SQLAlchemy
+pymysql
+requests
+markupsafe
+itsdangerous
+Jinja2

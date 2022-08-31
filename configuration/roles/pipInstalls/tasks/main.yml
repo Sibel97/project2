@@ -1,0 +1,8 @@
+---
+# tasks file for pipInstalls
+
+- name: "pip install"
+  pip:
+    name:
+    - flask 
+    - pytest

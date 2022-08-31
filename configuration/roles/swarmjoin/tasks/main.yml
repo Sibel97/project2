@@ -1,0 +1,12 @@
+---
+# tasks file for swarmjoin
+- name: "Print Hostvars"
+  debug:
+    var: hostvars['ansible1']
+
+- name: "Add node to swarm"
+  docker_swarm:
+    state: join
+    advertise_addr: instance-1
+    join_token: "{{ hostvars['ansible1']['swarm_info']['swarm_facts']['JoinTokens']['instance-1'] }}"
+    remote_addrs: [ 'ansible1:2377' ]
