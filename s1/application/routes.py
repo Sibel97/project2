@@ -14,8 +14,8 @@ def home():
 
 @app.route('/Generate', methods = ['GET'])
 def Generate():
-    Genre = requests.get('http://s2:5000/get_genre')
-    Author = requests.get('http://s3:5000/get_author')
+    Genre = requests.get('http://s2:5000/get_Genre')
+    Author = requests.get('http://s3:5000/get_Author')
     result = requests.post('http://s4:5000/get_result', json = {"Book": Title.text, "Author": Author.text, "Genre": Genre.text} )
     book = Books( Title = result.text, Author = Author.text, Genre= Genre.text)
     db.session.add(book)
