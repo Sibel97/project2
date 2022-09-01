@@ -6,4 +6,4 @@ class Books(db.Model):
     Author = db.Column(db.String(50))
     Genre = db.Column(db.String(50))
     def __str__(self):
-        return f"{self.ISBN}: {self.Title} by  {self.Author}. Genre: {self.Genre}"
+        return f"{self.ID}: {self.Title} by  {self.Author}. Genre: {self.Genre}"
