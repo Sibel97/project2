@@ -9,7 +9,8 @@
   apt:
     name:
     - python3
-    - python-pip
+    - python3-pip
+    - pip
     - git
     state: latest
     update_cache: true
