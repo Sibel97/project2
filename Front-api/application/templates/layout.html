@@ -1,0 +1,18 @@
+
+<html>
+    <head>
+        <title> Book Gen </title>
+        <meta author> Sibel Hassan </meta>
+    </head>
+    <body style="text-align: center; background-color: slategrey; font-family: 'Lucida Console', 'Courier New', monospace; ">
+        <h1 style= "text-align: center; font-size:45px;"><u> Book Generator </u></h1>
+        <nav style="background: black; padding: 15px; font-size:16px;">
+            <a style="color:white;margin-right:40px;" href="{{url_for('home')}}">Home</a>
+            <a style="color:white;margin-right:40px;" href="{{url_for('Previous')}}">View previous books</a>
+=
+        </nav>
+        <br/> <br/> <br/> <br/> <br/>
+    </body>
+    {% block body%}
+    {% endblock body %}
+</html>
