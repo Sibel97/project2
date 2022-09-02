@@ -1,0 +1,10 @@
+Flask
+markupsafe
+itsdangerous
+Jinja2
+flask-testing
+pytest
+pytest-cov
+markupsafe
+itsdangerous
+Jinja2
