@@ -2,7 +2,7 @@
   become: true
   roles:
   - initialinstalls
-  - pipinstalls
+  - pipInstalls
   - dockerinstall
 
 
