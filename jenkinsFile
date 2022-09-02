@@ -3,8 +3,8 @@ pipeline{
     stages{
         stage('Run Playbook'){
             steps{
-                sh "docker-compose.yaml swarm-master:/home/jenkins/docker-compose.yaml"
-                sh "nginx.conf swarm-master:/home/jenkins/nginx.conf"
+                sh "docker-compose.yaml"
+                sh "nginx.conf "
                 sh "ansible-playbook -i configuration/inventory.yaml configuration/playbook.yaml"
             }
 
