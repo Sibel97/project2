@@ -1,5 +1,5 @@
 - hosts: worker-group
-  become: true
+  become: yes
   roles:
   - initialinstalls
   - pipInstalls
@@ -7,12 +7,12 @@
 
 
 - hosts: manager-group
-  become: true
+  become: yes
   connection: local
   roles:
   - swarminit
 
 - hosts: worker-group
-  become: true
+  become: yes
   roles:
   - swarmjoin
