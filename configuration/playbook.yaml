@@ -15,4 +15,4 @@
 - hosts: worker-group
   become: yes
   roles:
-  - swarmjoin 
+  - swarmjoin
