@@ -11,4 +11,4 @@
     state: present
     name: mystack
     compose:
-    - home/Sibel/Task2/ansible/trio
+    - home/Sibel/project2
