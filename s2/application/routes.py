@@ -4,6 +4,6 @@ import random
 
 @app.route('/get_Genre', methods=['GET'])
 def Genre():
-    Genre = random.choice(["Romance", "Comedy", "Fantasy", "Horror", "Crime", "Drama"])
+    Genre = random.choice(["Romance", "Fantasy", "Horror", "Crime"])
     print(Genre)
     return Response(Genre, mimetype='text/plain')
