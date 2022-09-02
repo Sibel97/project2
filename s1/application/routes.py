@@ -14,13 +14,14 @@ def home():
 
 @app.route('/Generate', methods = ['GET'])
 def Generate():
-    Genre = requests.get('http://s2:5000/get_Genre')
-    Author = requests.get('http://s3:5000/get_Author')
-    result = requests.post('http://s4:5000/get_result', json = {"Book": Title.text, "Author": Author.text, "Genre": Genre.text} )
+    Genre = requests.get('http://localhost:5000/get_Genre')
+    Author = requests.get('http://localhost:5000/get_Author')
+    result = requests.post('http://localhost:5000/get_book', json = {"Author": Author.text, "Genre": Genre.text} )
     book = Books( Title = result.text, Author = Author.text, Genre= Genre.text)
-    db.session.add(book)
-    db.session.commit()
-    return render_template('Layout.html', book = book)
+    #db.session.add(book)
+    #db.session.commit()
+    print (Genre)
+    return render_template('layout.html', book = book)
 
 
 @app.route('/PreviousBooks', methods=['GET'])
