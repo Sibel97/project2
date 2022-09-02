@@ -4,3 +4,11 @@
   docker_swarm:
     state: present
   register: swarm_info
+
+
+- name: "Deploy app"
+  docker_stack:
+    state: present
+    name: Book_generator
+    compose:
+      - /home/jenkins/docker-compose.yaml
