@@ -12,7 +12,10 @@
     - python3
     - python3-pip
     - git 
-    - python-docker
+    - docker-ce 
+    - docker-ce-cli 
+    - containerd.io 
+    - docker-compose-plugin
     state: latest 
     update_cache: "true"
 
