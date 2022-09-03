@@ -12,6 +12,6 @@
     - python3
     - python3-pip
     - git 
-    state: latest
+    state: latest 
     update_cache: "true"
 
