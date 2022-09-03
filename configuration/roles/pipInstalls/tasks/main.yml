@@ -6,7 +6,6 @@
     name:
     - flask 
     - pytest
-    - docker<5
-    - docker-py
     - docker
+    - docker-py
     state: forcereinstall
