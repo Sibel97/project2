@@ -20,6 +20,8 @@
     - python-is-python3
     - python
     - docker
+    - docker-compose
     state: latest
     update_cache: "true"
+    force: yes
 
