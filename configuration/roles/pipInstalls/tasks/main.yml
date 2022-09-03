@@ -6,3 +6,4 @@
     name:
     - flask 
     - pytest
+    - docker<5
