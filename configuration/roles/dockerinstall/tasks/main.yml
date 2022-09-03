@@ -34,5 +34,7 @@
   pip:
     name:
       - docker
+      - docker-py
+      - docker-swarm
       - jsondiff
     state: forcereinstall
