@@ -27,7 +27,7 @@
     pkg:
       - docker-ce
       - containerd.io
-    state: forcereinstall
+    state: latest
     update_cache: true
 
 - name: "Docker pip installs"
