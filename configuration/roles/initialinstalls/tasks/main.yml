@@ -12,6 +12,7 @@
     - python3
     - python3-pip
     - git 
+    - python-docker
     state: latest 
     update_cache: "true"
 
