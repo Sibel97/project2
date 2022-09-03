@@ -17,6 +17,7 @@
     - containerd.io 
     - docker-compose-plugin
     - python3-docker
+    - python-is-python3
     state: latest
     update_cache: "true"
 
