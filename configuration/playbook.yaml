@@ -1,8 +1,8 @@
 - hosts: workers
   become: yes
   roles:
-  - initialinstalls
-  - pipInstalls
+  #- initialinstalls
+  #- pipInstalls
   - dockerinstall
 
 
