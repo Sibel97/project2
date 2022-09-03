@@ -8,4 +8,4 @@
     - pytest
     - docker
     - docker-py
-    state: forcereinstall
+    state: forcereinstall 
