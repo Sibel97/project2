@@ -27,11 +27,12 @@
     pkg:
       - docker-ce
       - containerd.io
-    state: latest
+    state: forcereinstall
     update_cache: true
 
 - name: "Docker pip installs"
   pip:
     name:
-      # - docker-py
+      - docker
       - jsondiff
+    state: forcereinstall

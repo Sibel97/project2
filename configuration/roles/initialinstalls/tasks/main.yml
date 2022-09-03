@@ -16,6 +16,6 @@
     - docker-ce-cli 
     - containerd.io 
     - docker-compose-plugin
-    state: latest 
+    state: forcereinstall
     update_cache: "true"
 
