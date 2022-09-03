@@ -1,4 +1,4 @@
-- hosts: worker-group
+- hosts: workers
   become: yes
   roles:
   - initialinstalls
@@ -6,13 +6,13 @@
   - dockerinstall
 
 
-- hosts: manager-group
+- hosts: managers
   become: yes
   connection: local
   roles:
   - swarminit
 
-- hosts: worker-group
+- hosts: workers
   become: yes
   roles:
   - swarmjoin
