@@ -13,4 +13,5 @@ all:
         ansible_user: jenkins
         ansible_pass: password
         ansible_python_interpreter: /usr/bin/python
-      environment: /home/Sibel/.local/lib/python3.6/site-packages
+      environment: 
+        PYTHONPATH: /home/Sibel/.local/lib/python3.6/site-packages
