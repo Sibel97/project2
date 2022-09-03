@@ -9,3 +9,4 @@
     - docker<5
     - docker-py
     - docker
+    state: forcereinstall
