@@ -7,7 +7,6 @@
 
 
 - hosts: managers
-  become: yes
   connection: local
   roles:
   - swarminit
