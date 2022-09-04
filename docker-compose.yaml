@@ -49,7 +49,7 @@ services:
     networks:
       - BookNetwork
   Author-api:
-    image: sibel97/Author-api:latest
+    image: sibel97/author-api:latest
     build: ./Author-api
     deploy:
       replicas: 3
