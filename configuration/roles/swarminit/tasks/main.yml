@@ -3,9 +3,9 @@
 - name: "Init a new swarm with default parameters"
   docker_swarm:
     state: present
-  register: info
   vars:
     ansible_python_interpreter: /usr/bin/python3
+    register: info
 
 
 - name: "Deploy app"
