@@ -19,7 +19,7 @@
   docker_swarm:
     state: present
 
-- name: "get swarm info"
+- name: "get swarm info" 
   docker_swarm_info:
   register: info
 
