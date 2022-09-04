@@ -41,7 +41,7 @@ services:
       - genre-api
       - Author-api
       - Book-api
-  Genre-api:
+  genre-api:
     image: sibel97/genre-api:latest
     build: ./genre-api
     deploy:
