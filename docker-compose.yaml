@@ -56,8 +56,8 @@ services:
     networks:
       - BookNetwork
   Book-api:
-    image: sibel97/book-api:latest
-    build: ./book-api
+    image: sibel97/Book-api:latest
+    build: ./Book-api
     deploy:
       replicas: 3
     networks:
