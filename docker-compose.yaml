@@ -29,9 +29,9 @@ services:
     networks:
       - events-net
   front-api:
-    container_name: front-api
+    container_name: Front-api
     image: sibel97/front-api:latest
-    build: ./front-api
+    build: ./Front-api
     environment:
       MYSQL_ROOT_PASSWORD: root
     networks:
