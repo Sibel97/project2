@@ -19,6 +19,7 @@
     - python3-docker
     - python-is-python3
     - python
+    - jsondiff
     state: latest
     update_cache: "true"
     force: yes
