@@ -26,6 +26,6 @@
 - name: "Deploy app"
   docker_stack:
     state: present
-    name: event_generator
+    name: book_generator
     compose:
       - /home/jenkins/docker-compose.yaml
