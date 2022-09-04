@@ -1,31 +1,31 @@
 ---
 # tasks file for swarminit
-# - name: "Init a new swarm with default parameters"
-#   docker_swarm:
-#     state: present
-#   register: swarm_info
-#   vars:
-#     ansible_python_interpreter: /usr/bin/python3
-
-
-# - name: "Deploy app"
-#   docker_stack:
-#     state: present
-#     name: Book_generator
-#     compose:
-#       - /home/jenkins/docker-compose.yaml
-
-- name: "Init swarm"
+- name: "Init a new swarm with default parameters"
   docker_swarm:
     state: present
+  register: swarm_info
+  vars:
+    ansible_python_interpreter: /usr/bin/python3
 
-- name: "get swarm info" 
-  docker_swarm_info:
-  register: info
 
 - name: "Deploy app"
   docker_stack:
     state: present
-    name: book_generator
+    name: Book_generator
     compose:
       - /home/jenkins/docker-compose.yaml
+
+# - name: "Init swarm"
+#   docker_swarm:
+#     state: present
+
+# - name: "get swarm info" 
+#   docker_swarm_info:
+#   register: info
+
+# - name: "Deploy app"
+#   docker_stack:
+#     state: present
+#     name: book_generator
+#     compose:
+#       - /home/jenkins/docker-compose.yaml
