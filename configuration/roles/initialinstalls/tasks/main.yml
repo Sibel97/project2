@@ -3,7 +3,7 @@
 - name: "update apt packages"
   apt:
     upgrade: full
-    update_cache: "true"
+    update_cache: yes
 
 - name: "install git and python3 and python pip"
   become: "true"
@@ -16,6 +16,6 @@
     - python 
     - docker-compose
     state: latest
-    update_cache: "true"
+    update_cache: yes
     force: yes
 
