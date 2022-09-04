@@ -20,7 +20,7 @@ pipeline {
                 sh "docker-compose up -d"
                 sh "docker login -u sibel97 -p password1234"
                 sh "docker-compose push"
-            }
+            } 
         }
         stage('Deploy') {
             steps {
