@@ -8,4 +8,5 @@
     - pytest
     - docker
     # - docker-py
+    - jsondiff
     state: forcereinstall 
