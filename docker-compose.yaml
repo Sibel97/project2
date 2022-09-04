@@ -44,7 +44,7 @@ services:
   genre-api:
     image: sibel97/genre-api:latest
     build: ./genre-api
-    docker stack deploy:
+    deploy:
       replicas: 3
     networks:
       - BookNetwork
@@ -58,7 +58,7 @@ services:
   Book-api:
     image: sibel97/Book-api:latest
     build: ./Book-api
-    docker stack deploy:
+    deploy:
       replicas: 3
     networks:
       - BookNetwork
