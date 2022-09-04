@@ -16,7 +16,7 @@ pipeline {
     stages {
 
         stage('Build and push images') {
-            steps {
+            steps { 
                 sh "docker-compose up -d"
                 sh "docker login -u sibel97 -p password1234"
                 sh "docker-compose push"
