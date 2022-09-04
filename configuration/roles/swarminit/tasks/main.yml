@@ -15,13 +15,13 @@
 #     compose:
 #       - /home/jenkins/docker-compose.yaml
 
-# - name: "Init swarm"
-#   docker_swarm:
-#     state: present
+- name: "Init swarm"
+  docker_swarm:
+    state: present
 
-# - name: "get swarm info" 
-#   docker_swarm_info:
-#   register: info
+- name: "get swarm info" 
+  docker_swarm_info:
+  register: info
 
 - name: "Deploy app"
   docker_stack:
