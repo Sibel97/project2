@@ -20,7 +20,7 @@
     state: present
 
 - name: "get swarm info" 
-  docker_swarm_info:
+  docker_swarm_info: 
   register: info
 
 - name: "Deploy app"
