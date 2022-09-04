@@ -51,7 +51,7 @@ services:
   Author-api:
     image: sibel97/Author-api:latest
     build: ./Author-api
-    docker stack deploy:
+    deploy:
       replicas: 3
     networks:
       - BookNetwork
