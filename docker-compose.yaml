@@ -12,7 +12,7 @@ services:
         source: ./nginx.conf
         target: /etc/nginx/nginx.conf
     networks:
-      - BookNetwrok
+      - BookNetwork
     depends_on:
       - front-api
   mysql:
@@ -44,21 +44,21 @@ services:
   genre-api:
     image: sibel97/genre-api:latest
     build: ./genre-api
-    deploy:
+    docker stack deploy:
       replicas: 3
     networks:
       - BookNetwork
   Author-api:
     image: sibel97/Author-api:latest
     build: ./Author-api
-    deploy:
+    docker stack deploy:
       replicas: 3
     networks:
       - BookNetwork
   Book-api:
     image: sibel97/Book-api:latest
     build: ./Book-api
-    deploy:
+    docker stack deploy:
       replicas: 3
     networks:
       - BookNetwork
