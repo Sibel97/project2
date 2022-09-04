@@ -7,7 +7,7 @@
     - flask 
     - pytest
     - docker
-    - docker-compose-plugin
+    - docker-compose
     # - docker-py
     - jsondiff
     state: forcereinstall 
