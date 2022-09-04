@@ -51,6 +51,7 @@ services:
   Author-api:
     image: sibel97/author-api:latest
     build: ./Author-api
+    dockerfile: Dockerfile
     deploy:
       replicas: 3
     networks:
